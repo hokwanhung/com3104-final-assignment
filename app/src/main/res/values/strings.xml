@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">EventUp</string>
+    <string-array name="districts_array">
+        <item>Central and West District</item>
+        <item>Eastern District</item>
+        <item>Southern District</item>
+        <item>Wan Chai District</item>
+        <item>Kowloon City District</item>
+        <item>Kwun Tong District</item>
+        <item>Sham Shui Po District</item>
+        <item>Wong Tai Sin District</item>
+        <item>Yau Tsim Mong District</item>
+        <item>Island District</item>
+        <item>Kwai Tsing District</item>
+        <item>North District</item>
+        <item>Sai Kung District</item>
+        <item>Sha Tin District</item>
+        <item>Tai Po District</item>
+        <item>Tsuen Wan District</item>
+        <item>Tuen Mun District</item>
+        <item>Yuen Long District</item>
+    </string-array>
+
+    <string-array name="search_districts_array">
+        <item>All</item>
+        <item>Central and West District</item>
+        <item>Eastern District</item>
+        <item>Southern District</item>
+        <item>Wan Chai District</item>
+        <item>Kowloon City District</item>
+        <item>Kwun Tong District</item>
+        <item>Sham Shui Po District</item>
+        <item>Wong Tai Sin District</item>
+        <item>Yau Tsim Mong District</item>
+        <item>Island District</item>
+        <item>Kwai Tsing District</item>
+        <item>North District</item>
+        <item>Sai Kung District</item>
+        <item>Sha Tin District</item>
+        <item>Tai Po District</item>
+        <item>Tsuen Wan District</item>
+        <item>Tuen Mun District</item>
+        <item>Yuen Long District</item>
+    </string-array>
+</resources>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/title_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title: "
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/title_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter title" />
+
+        <TextView
+            android:id="@+id/date_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date: "
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/date_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select date" />
+
+        <TextView
+            android:id="@+id/time_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time: "
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/time_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select time" />
+
+        <TextView
+            android:id="@+id/description_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description: "
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/description_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter description" />
+
+        <TextView
+            android:id="@+id/district_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="District: "
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/district_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/address_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address: "
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/address_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter address" />
+
+        <TextView
+            android:id="@+id/quota_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quota: "
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/quota_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter quota"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/fee_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fee: "
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/fee_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter fee"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/post_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="50dp"
+            android:text="Post"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>
