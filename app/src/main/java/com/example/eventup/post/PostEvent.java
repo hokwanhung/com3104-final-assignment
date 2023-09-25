@@ -1,4 +1,4 @@
-package com.example.eventup;
+package com.example.eventup.post;
 
 public class PostEvent {
     private String postByID;

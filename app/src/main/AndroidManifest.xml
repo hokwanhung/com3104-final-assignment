@@ -12,22 +12,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EventUp">
         <activity
-            android:name=".StatusDetailsActivity"
+            android:name=".status.StatusDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".StatusListActivity"
+            android:name=".status.StatusListActivity"
             android:exported="false" />
         <activity
-            android:name=".EventListActivity"
+            android:name=".event.EventListActivity"
             android:exported="false" />
         <activity
-            android:name=".EventDetailsActivity"
+            android:name=".event.EventDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".CalendarActivity"
+            android:name=".calendar.CalendarActivity"
             android:exported="false" />
         <activity
-            android:name=".PostEventActivity"
+            android:name=".post.PostEventActivity"
             android:exported="false" />
         <activity
             android:name=".WallpaperActivity"

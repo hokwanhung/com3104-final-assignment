@@ -1,4 +1,4 @@
-package com.example.eventup;
+package com.example.eventup.status;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.example.eventup.R;
 
 import java.util.ArrayList;
 import java.util.Map;

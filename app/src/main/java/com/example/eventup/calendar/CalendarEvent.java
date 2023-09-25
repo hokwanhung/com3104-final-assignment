@@ -1,4 +1,4 @@
-package com.example.eventup;
+package com.example.eventup.calendar;
 
 import java.util.Map;
 

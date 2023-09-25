@@ -1,11 +1,9 @@
-package com.example.eventup;
+package com.example.eventup.event;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import java.util.Map;
-
-public class StatusEvent implements Parcelable {
+public class Event implements Parcelable {
     private String key;
     private String postByID;
     private String title;
@@ -16,9 +14,8 @@ public class StatusEvent implements Parcelable {
     private String address;
     private int quota;
     private int fee;
-    private Map<String, String> participants;
 
-    public StatusEvent(String key, String postByID, String title, String date, String time, String description, String district, String address, int quota, int fee, Map<String, String> participants) {
+    public Event(String key, String postByID, String title, String date, String time, String description, String district, String address, int quota, int fee) {
         this.key = key;
         this.postByID = postByID;
         this.title = title;
@@ -29,12 +26,11 @@ public class StatusEvent implements Parcelable {
         this.address = address;
         this.quota = quota;
         this.fee = fee;
-        this.participants = participants;
     }
 
     // Getter methods for each field
 
-    protected StatusEvent(Parcel in) {
+    protected Event(Parcel in) {
         key = in.readString();
         postByID = in.readString();
         title = in.readString();
@@ -45,22 +41,19 @@ public class StatusEvent implements Parcelable {
         address = in.readString();
         quota = in.readInt();
         fee = in.readInt();
-        participants = in.readHashMap(String.class.getClassLoader()); // read the Map from the Parcel
     }
 
-    public static final Creator<StatusEvent> CREATOR = new Creator<StatusEvent>() {
+    public static final Creator<Event> CREATOR = new Creator<Event>() {
         @Override
-        public StatusEvent createFromParcel(Parcel in) {
-            return new StatusEvent(in);
+        public Event createFromParcel(Parcel in) {
+            return new Event(in);
         }
 
         @Override
-        public StatusEvent[] newArray(int size) {
-            return new StatusEvent[size];
+        public Event[] newArray(int size) {
+            return new Event[size];
         }
     };
-
-    public Map<String, String> getParticipants() { return participants; }
 
     public String getKey() {
         return key;
@@ -156,6 +149,5 @@ public class StatusEvent implements Parcelable {
         dest.writeString(address);
         dest.writeInt(quota);
         dest.writeInt(fee);
-        dest.writeMap(participants);
     }
 }

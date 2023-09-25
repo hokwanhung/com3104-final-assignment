@@ -1,12 +1,12 @@
-package com.example.eventup;
+package com.example.eventup.calendar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.CalendarView;
 
+import com.example.eventup.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.*;
@@ -27,9 +27,9 @@ public class CalendarActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_calendar);
+        setContentView(com.example.eventup.R.layout.activity_calendar);
 
-        calendarView = findViewById(R.id.calendarView);
+        calendarView = findViewById(com.example.eventup.R.id.calendarView);
         eventsRecyclerView = findViewById(R.id.eventsRecyclerView);
 
         eventsRecyclerView.setHasFixedSize(true);
